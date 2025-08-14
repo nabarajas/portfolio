@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nancy Barajas Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- Navbar --> 
+  <nav id="desktop-nav">
+    <div class="logo>">NANCY BARAJAS / PORTFOLIO</div>
+    <div>
+        <ul class="nav-links">
+          <li><a href="#desktop-nav">HOME</a></li>
+            <li><a href="#testimony">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--Hamburger Menu -->
+<nav id="hamburger-nav">
+    <div class="logo">NANCY BARAJAS / PORTFOLIO</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+    </div>
+    <div class="menu-links">
+      <li>
+        <a href="#desktop-nav" onclick="toggleMenu()">HOME</a>
+    </li>
+        <li>
+            <a href="#testimony" onclick="toggleMenu()">ABOUT</a>
+        </li>
+        <li>
+          <a href="#skills" onclick="toggleMenu()">SKILLS</a>
+      </li>
+        <li>
+            <a href="#contact" onclick="toggleMenu()">CONTACT</a>
+        </li>
+    </div>
+</nav>
+
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="text">
+        <h1>Web Developer based out of Las Vegas, NV.</h1>
+
+      <div class="btn-link-container">
+        <button class="btn cv-btn" 
+        onclick="window.open('./assets/NBarajas_Resume.pdf')">Download CV</button>
+        <button class="btn contact-btn" 
+        onclick="location.href='#contact'">Contact</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Testimony Section -->
+    <section id="testimony" class="testimony-section">
+      <div class="group">
+        <div class="person-details">
+          <img src="assets/profile-pic.png">
+          <p>Nancy Barajas</p>
+        </div>
+
+        <div class="text">
+          I am a recent, highly motivated, college graduate focused on web development. 
+          My goal is to help build distinctive user experiences through innovative websites 
+          that are inclusive and user friendly for everyone, reaching users globally. 
+          While I do not have hands on experience in the industry, 
+          I am eager to bring in a fresh perspective and a new set of ideas to my team. 
+          I believe that with my passion for web development alone, I will be able to succeed 
+          within your company and continue to develop the skills needed in order to become a great asset.
+          All I seek is an opportunity to show that I have what it takes.
+        </div>
+      </div>
+    </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+          <h2>Skills</h2>
+    
+          <div class="cells">
+            <div class="cell">
+              <i class="fa-brands fa-html5"></i>
+              <span>HTML</span>
+            </div>
+            
+            <div class="cell">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span>CSS</span>
+            </div>
+            
+            <div class="cell">
+              <i class="fa-brands fa-square-js"></i>
+              <span>JavaScript</span>
+            </div>
+    
+            <div class="cell">
+              <i class="fa-brands fa-python"></i>
+              <span>Python</span>
+            </div>
+
+            <div class="cell">
+              <i class="fa-brands fa-figma"></i>             
+              <span>Figma</span>
+            </div>
+
+            <div class="cell">
+              <i class="fa-brands fa-confluence"></i>
+              <span>Confluence</span>
+            </div>
+
+            <div class="cell">
+              <i class="fa-brands fa-jira"></i>
+              <span>JIRA</span>
+            </div>
+
+            <div class="cell">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </div>
+          </div>
+        </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h1>Let's Connect! </h1>
+      <div class="socials-container">
+        <a href="https://www.linkedin.com/in/nancy-barajas/">
+          <i class="fa-brands fa-linkedin fa-5x"></i></a>  
+        <a href="https://github.com/nabarajas">
+          <i class="fa-brands fa-github fa-5x"></i></a>    
+        <a href="https://www.instagram.com/na.barajas/">
+          <i class="fa-brands fa-instagram fa-5x"></i></a>  
+      </div>
+      </div>
+    </section>
+    <footer>
+      <!-- Footer Navbar -->
+      <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#desktop-nav">HOME</a></li>
+              <li><a href="#testimony">ABOUT</a></li>
+              <li><a href="#skills">SKILLS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>&copy; Copyright 2025. Nancy Barajas. All rights reserved.</p>
+    </footer> 
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
